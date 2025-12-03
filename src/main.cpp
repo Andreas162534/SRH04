@@ -1,5 +1,5 @@
 #include <Arduino.h>
-
+//assume positive y put sensors at 0,0 and D,0!!! on x axis straigt facing down, adjsut h, D and sensor pins!
 // Abstand zwischen den Sensoren in cm
 const float D = 16.0;       // z. B. 20 cm
 
