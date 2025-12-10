@@ -1,3 +1,5 @@
+//1TX, in object plane, not usable!
+
 #include <Arduino.h>
 #include "config.h"
 #include "kalman.h"

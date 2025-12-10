@@ -1,17 +1,14 @@
 #include "config.h"
 
-// geometry
-const float D = 30.0;
-const float h = 50.0;
+const float D           = 200.0f;     // 20 cm
+const float h           = 300.0f;     // 30 cm
+const int   trigA       = 2;
+const int   echoA       = 3;
+const int   trigB       = 4;
+const int   echoB       = 5;
+const int   trigTX      = 6;         // if used
 
-// pins
-const int trigA = 10;
-const int echoA = 9;
-const int trigB = 12;
-const int echoB = 11;
+int         avgN        = 3;
+const float c_mm_per_us = 0.343f;    // ~343 m/s
 
-const int trigTX = 4;   // or whatever you use
-
-// global parameters
-int avgN = 3;
-const float c_mm_per_us = 0.343;  // adjust if needed
+bool        useKalman   = false;
