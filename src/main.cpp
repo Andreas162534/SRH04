@@ -4,12 +4,12 @@
 const float D = 16.0;       // z. B. 20 cm
 
 // Sensor A Pins
-const int trigA = 10;
-const int echoA = 9;
+const int trigA = 11;
+const int echoA = 12;
 
 // Sensor B Pins
-const int trigB = 12;
-const int echoB = 11;
+const int trigB = 10;
+const int echoB = 9;
 
 float measure(int trig, int echo) {
   digitalWrite(trig, LOW);
