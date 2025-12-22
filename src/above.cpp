@@ -45,10 +45,15 @@ void aboveLoop() {
 
     if (useKalman) kalman2D(x, y);
 
-    Serial.print("A-mode  X=");
+    Serial.print("dA: ");
+    Serial.print(dA);
+    Serial.print("  dB: ");
+    Serial.print(dB);
+    Serial.print("  -> X: ");
     Serial.print(x);
-    Serial.print("  Y=");
-    Serial.println(y);
+    Serial.print(" cm, Y: ");
+    Serial.print(y);
+    Serial.println(" cm");
 
     delay(20);
 }

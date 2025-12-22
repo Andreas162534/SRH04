@@ -4,7 +4,7 @@
 float xKF = 0, yKF = 0;
 float vxKF = 0, vyKF = 0;
 
-bool useKalman = true;
+
 
 float R = 4.0;
 float Q = 0.1;

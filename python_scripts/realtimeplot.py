@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import re
 
 # COM-Port anpassen! z. B. "COM3" oder "/dev/ttyUSB0"
-ser = serial.Serial("COM3", 9600)
+ser = serial.Serial("COM5", 9600)
 
 plt.ion()
 fig, ax = plt.subplots()

@@ -11,10 +11,10 @@ void loop() {
 }
 
 
-// void setup() {
-//     triangulationSetup();
-// }
+//void setup() {
+//    triangulationSetup();
+//}
 
-// void loop() {
-//     triangulationLoop();
-// }
+//void loop() {
+//    triangulationLoop();
+//}

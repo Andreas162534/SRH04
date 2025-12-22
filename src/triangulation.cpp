@@ -2,6 +2,7 @@
 #include "config.h"
 #include "triangulation.h"
 
+// 
 // measure distance for one HC-SR04 (cm)
 static float measure(int trig, int echo) {
     digitalWrite(trig, LOW);
@@ -10,8 +11,12 @@ static float measure(int trig, int echo) {
     delayMicroseconds(10);
     digitalWrite(trig, LOW);
 
-    long duration = pulseIn(echo, HIGH);
-    float distance = duration * 0.0343f / 2.0f; // cm
+    
+    unsigned long duration = pulseIn(echo, HIGH, 30000); // µs, timeout ≈5 m
+    if (duration == 0) return NAN;       // no echo
+
+
+    float distance = duration * v / 2.0f; // cm but duraiton in us!
     return distance;
 }
 

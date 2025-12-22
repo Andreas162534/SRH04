@@ -32,8 +32,8 @@ void bistaticLoop() {
     float tofA = measureAvgTOF(trigTX, echoA, 3);
     float tofB = measureAvgTOF(trigTX, echoB, 3);
 
-    float LA = c_mm_per_us * tofA;   // mm
-    float LB = c_mm_per_us * tofB;   // mm
+    float LA = v * tofA;   // mm
+    float LB = v * tofB;   // mm
 
     float rA = 0.5f * LA;            // object→A (mm)
     float rB = LB - rA;              // object→B (mm)

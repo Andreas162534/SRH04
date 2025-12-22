@@ -12,7 +12,7 @@ extern const int trigTX;         // if you use the bistatic mode
 
 // measurement
 extern int   avgN;
-extern const float c_mm_per_us;  // for bistatic TOF
+extern const float v;  // for bistatic TOF
 
 // options
 extern bool useKalman;
